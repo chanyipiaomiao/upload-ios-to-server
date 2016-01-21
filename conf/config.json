@@ -1,0 +1,45 @@
+{ "items": [
+  "official-ios",
+  "yunfan-ios"
+  ],
+  "official-ios-server": {
+    "protocol": "ftp",
+    "ip": "114.114.114.114",
+    "port": 21,
+    "username": "xxxx",
+    "password": "xxxx"
+  },
+  "yunfan-ios-server": {
+    "protocol": "ftp",
+    "ip": "114.114.114.114",
+    "port": 21,
+    "username": "xxxxx",
+    "password": "xxxxx"
+  },
+  "official-ios": {
+    "comment": "ios 官网版本及官网升级版本",
+    "serverInfo": "official-ios-server",
+    "suffix": "ipa plist",
+    "dstPath": "./",
+    "backupPath": "ios_backup/",
+    "promptText": "下载地址:",
+    "downloadUrlPrefix": "https://xxx.xxx.com/",
+    "plistPrefix": "ivp4ios",
+    "ipaRegex": "ivp_R(\\d+\\.\\d+\\.\\d+)_imifun_(\\d+)\\.ipa",
+    "plistRegex": "ivp4ios_\\d+.plist",
+    "version": "\\d+\\.\\d+\\.\\d+"
+  },
+  "yunfan-ios": {
+    "comment": "ios 云帆版本及云帆升级版本",
+    "serverInfo": "yunfan-ios-server",
+    "suffix": "ipa plist",
+    "dstPath": "./",
+    "backupPath": "ios_backup/",
+    "promptText": "下载地址:",
+    "downloadUrlPrefix": "https://xxxx.xxxx.com/",
+    "plistPrefix": "yunfan",
+    "ipaRegex": "ivp_R(\\d+\\.\\d+\\.\\d+)_yunfan_(\\d+)\\.ipa",
+    "plistRegex": "yunfan_\\d+.plist",
+    "version": "\\d+\\.\\d+\\.\\d+"
+  }
+}
